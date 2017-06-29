@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170625034924) do
-=======
 ActiveRecord::Schema.define(version: 20170626203612) do
->>>>>>> data-feature
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,13 +22,9 @@ ActiveRecord::Schema.define(version: 20170626203612) do
     t.datetime "updated_at",             null: false
     t.string   "slug"
     t.integer  "status",     default: 0
-<<<<<<< HEAD
-    t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
-=======
     t.integer  "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
     t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
->>>>>>> data-feature
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
