@@ -7,11 +7,17 @@
     <p>
       <%= @blog.body %>
     </p>
-
-    <nav class="blog-pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-    </nav>
+    
+    <%= render 'comments/comment_form' %>
+    
+    <div id="comments" data-blog-id="<%= @blog.id %>">
+        <%= render @blog.comments %>
+    </div>
+    
+    <!--<nav class="blog-pagination">-->
+    <!--    <a class="btn btn-outline-primary" href="#">Older</a>-->
+    <!--    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>-->
+    <!--</nav>-->
 
 </div>
 
