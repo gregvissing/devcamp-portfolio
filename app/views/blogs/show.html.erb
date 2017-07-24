@@ -6,6 +6,8 @@
         <span class="breadcrumb-item active"><%= @blog.title %></span>
     </nav>
     
+    <%= @blog.topic.title %>
+    
     <h2><%= @blog.title %></h2>
     
     <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
