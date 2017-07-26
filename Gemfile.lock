@@ -298,5 +298,8 @@ DEPENDENCIES
   vissing_view_tool (~> 0.1.0)
   web-console (>= 3.3.0)
 
+RUBY VERSION
+   ruby 2.4.0p0
+
 BUNDLED WITH
    1.13.7
