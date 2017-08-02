@@ -327,6 +327,10 @@ h6, .h6 {
     }
     .navbar-toggler {
         z-index: 10;
+        height: 40px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
     .navbar .container {
         width: 100%;
