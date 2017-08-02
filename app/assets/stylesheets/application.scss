@@ -85,16 +85,15 @@ h6, .h6 {
  * Header
  */
 
-.navbar {
-    display: none;
-}
-
 .masthead {
-  margin-bottom: 2rem;
+    left: 0;
+    right: 0;
+  margin: 0 auto 2rem;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  font-size: 1.75rem;
 }
 
 .nav-masthead .nav-link {
@@ -209,7 +208,7 @@ h6, .h6 {
     float: none;
 }
 
-.app-nav span {
+.app-nav span, .app-nav li {
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -236,6 +235,10 @@ h6, .h6 {
 .tech-news {
     color: black;
     margin: 20px;
+}
+
+.tech-news-container {
+    margin-top: 90px;
 }
 
 .tech-news a {
@@ -274,74 +277,7 @@ h6, .h6 {
     margin-bottom: 10px;
 }
 
-.nav-bg-container {
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-    height: 100px;
-    width: 100%;
-    z-index: 9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-@media (max-width: 767px) {
-    .masthead {
-        display: none;
-    }
-    .navbar {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        display: flex;
-        padding: 1rem 0;
-    }
-    .navbar-nav {
-        background-color: rgba(51,51,51,0.75);
-        position: relative;
-        z-index: 10;
-    }
-    .navbar .container {
-        margin: 0;
-    }
-    .bg-faded {
-        background-color: transparent;
-    }
-    .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
-        color: rgba(255, 255, 255, 0.9);
-        border-color: rgba(255,255,255,0.1);
-    }
-    .navbar-light .navbar-toggler {
-        border-color: rgba(255, 255, 255, 0.1);
-        z-index: 11;
-    }
-    .navbar-light .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-    .navbar-brand {
-        margin-right: 0;
-    }
-    .nav-bg-container {
-        z-index: -1;
-    }
-    .nav-link {
-        color: rgba(255, 255, 255, 0.9) !important;
-    }
-    .cover {
-        padding: 4rem 1.5rem;
-    }
-    .site-wrapper, .site-wrapper-inner {
-     display: block;
-   }
-   .app-card-container > .card {
-        padding: 20px;
-    }
-    .app-card-container .col-md-6 > iframe {
-        width: 100%;
-    }
+.navbar-nav.mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto;
 }
