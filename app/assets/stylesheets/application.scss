@@ -208,9 +208,14 @@ h6, .h6 {
     float: none;
 }
 
-.app-nav span, .app-nav li {
+.app-nav span {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.app-nav li {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #background {
@@ -280,4 +285,47 @@ h6, .h6 {
 .navbar-nav.mr-auto {
     margin-right: 0 !important;
     margin-left: auto;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.mastfoot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.navbar {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+    .navbar-nav.mr-auto {
+        background-color: rgba(51,51,51,0.8);
+    }
+    .nav-masthead .nav-link {
+        color: rgba(255, 255, 255, 0.75);
+        margin-left: 0 !important;
+    }
+    .navbar-toggler {
+        z-index: 10;
+    }
 }
