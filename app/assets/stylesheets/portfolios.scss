@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "animate";
 
 @font-face {
   font-family: 'Lato';
@@ -85,6 +86,6 @@ footer p {
  * Custom Styles
  */
  
- .portfolio-container {
-   padding-top: 30px;
- }
+.portfolio-container {
+    padding-top: 30px;
+}

@@ -9,3 +9,18 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.album .col-md-4').hide()
+
+        $('.album .col-md-4').each(function(i) {
+           delay =(i)*500;
+           setTimeout(function (div) {
+                    div.show().addClass('animated slideInUp');
+                }, delay, $(this));
+        });
+
+    });
+</script>
