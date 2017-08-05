@@ -32,29 +32,14 @@
                     documents will allow clients to update their website with ease.</p>
                     
                 <p>
-                    <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#jobHistory"
-                        aria-expanded="false"
-                        aria-controls="jobHistory"
-                    >
-                        Job History
-                    </button>
-                    <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#education"
-                        aria-expanded="false"
-                        aria-controls="education"
-                    >
-                        Education
-                    </button>
                     
-                    <p>
-                        <div class="collapse" id="jobHistory">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#jobHistory" data-toggle="tab">Job History</a></li>
+                        <li><a href="#education" data-toggle="tab">Education</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="jobHistory">
                             <div class="card card-block">
                                 <h5>Aquiire</h5>
                                 <h6>Front-End Developer</h6>
@@ -72,7 +57,7 @@
                                 <h6>Web Developer</h6>
                             </div>
                         </div>
-                        <div class="collapse" id="education">
+                        <div class="tab-pane" id="education">
                             <div class="card card-block">
                                 <h5>Northern Kentucky University</h5>
                                 <h6>Major: Computer Information Technology</h6>
@@ -82,8 +67,8 @@
                                 <h6>Major: Software Engineering Technology</h6>
                             </div>
                         </div>
-                    </p>
-                </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
