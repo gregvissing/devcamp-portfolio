@@ -371,3 +371,17 @@ h6, .h6 {
         width: 100%;
     }
 }
+
+.btn-container {
+    border-bottom: 1px solid #666;
+    .btn.btn-primary {
+        background-color: #fff;
+        color: #333;
+        margin-bottom: -1px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        &[aria-expanded="true"]{
+          border-bottom-color: #fff;
+        }
+    }
+}

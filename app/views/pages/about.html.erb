@@ -30,13 +30,32 @@
                     My focus when developing a project is to make it as user friendly as possible no matter 
                     what device it is being viewed on. My attention to detail when creating training 
                     documents will allow clients to update their website with ease.</p>
-                    
-                    
-                <%= render 'about_buttons' %>
-                <%= render 'about_job_history' %>
-                <%= render 'about_education' %>
+                
+                <div class="bd-example bd-example-tabs" role="tabpanel">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <%= render 'about_tabs' %>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <%= render 'about_job_history' %>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <%= render 'about_education' %>
+                        </div>
+                    </div>
+                </div>
                      
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.btn.btn-primary').click(function() {
+            
+        });
+
+    });
+</script>
