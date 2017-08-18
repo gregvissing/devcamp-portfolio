@@ -5,7 +5,7 @@ class Portfolio < ApplicationRecord
                                   reject_if: lambda { |attrs| attrs['name'].blank? }
     
     include Placeholder
-    validates_presence_of :title, :body
+    validates_presence_of :title, :body, :website_url
     
     mount_uploader :thumb_image, PortfolioUploader
     mount_uploader :main_image, PortfolioUploader
