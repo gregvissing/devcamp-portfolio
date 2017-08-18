@@ -353,22 +353,45 @@ h6, .h6 {
     .navbar-brand {
         margin-right: 0;
     }
-    .navbar-nav.mr-auto {
-        background-color: rgba(51,51,51,0.8);
-    }
     .nav-masthead .nav-link {
         color: rgba(255, 255, 255, 0.75);
         margin-left: 0 !important;
     }
+    .navbar-nav.mr-auto {
+        background-color: rgba(51,51,51,0.8);
+        > .nav-link {
+            margin-left: 10px !important;
+            margin-right: 10px;
+        }
+    }
     .navbar-toggler {
         z-index: 10;
         height: 40px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        top: 21px;
+        &:focus {
+            outline-color: transparent;
+        }
     }
     .navbar .container {
         width: 100%;
+        text-align: left;
+    }
+    .app-card-container {
+        .card {
+            padding: 20px;
+        }
+    }
+    .profile-img {
+        width: 100%;
+    }
+    
+    .mastfoot {
+        .inner {
+            padding: 1rem;
+            .app-footer {
+                padding-bottom: 0;
+            }
+        }
     }
 }
 
