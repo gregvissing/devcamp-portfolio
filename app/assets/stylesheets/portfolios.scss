@@ -110,3 +110,9 @@ footer p {
     }
 }
 
+.list-unstyled {
+    li:last-child a {
+        display: block;
+    }
+}
+
