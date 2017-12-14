@@ -7,7 +7,7 @@ class TopicsController < ApplicationController
     end
 
     def show
-        @topic = Topic.find(params[:id])
+        @topic = Topic.friendly.find(params[:id])
     
         if logged_in?(:site_admin)
             @blogs = @topic.blogs.recent.page(params[:page]).per(5)
@@ -17,6 +17,10 @@ class TopicsController < ApplicationController
     end
   
     private
+    
+    def topic_params
+        params.require(:topic).permit(:title)
+    end
     
     def set_sidebar_topics
         @side_bar_topics = Topic.with_blogs
